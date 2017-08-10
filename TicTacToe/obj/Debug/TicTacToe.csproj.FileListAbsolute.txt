@@ -1,0 +1,9 @@
+c:\users\abel\documents\visual studio 2017\Projects\TicTacToe\TicTacToe\obj\Debug\TicTacToe.csprojResolveAssemblyReference.cache
+c:\users\abel\documents\visual studio 2017\Projects\TicTacToe\TicTacToe\obj\Debug\TicTacToe.Form1.resources
+c:\users\abel\documents\visual studio 2017\Projects\TicTacToe\TicTacToe\obj\Debug\TicTacToe.Properties.Resources.resources
+c:\users\abel\documents\visual studio 2017\Projects\TicTacToe\TicTacToe\obj\Debug\TicTacToe.csproj.GenerateResource.Cache
+c:\users\abel\documents\visual studio 2017\Projects\TicTacToe\TicTacToe\bin\Debug\TicTacToe.exe.config
+c:\users\abel\documents\visual studio 2017\Projects\TicTacToe\TicTacToe\bin\Debug\TicTacToe.exe
+c:\users\abel\documents\visual studio 2017\Projects\TicTacToe\TicTacToe\bin\Debug\TicTacToe.pdb
+c:\users\abel\documents\visual studio 2017\Projects\TicTacToe\TicTacToe\obj\Debug\TicTacToe.exe
+c:\users\abel\documents\visual studio 2017\Projects\TicTacToe\TicTacToe\obj\Debug\TicTacToe.pdb
