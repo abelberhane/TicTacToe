@@ -7,3 +7,12 @@ c:\users\abel\documents\visual studio 2017\Projects\TicTacToe\TicTacToe\bin\Debu
 c:\users\abel\documents\visual studio 2017\Projects\TicTacToe\TicTacToe\bin\Debug\TicTacToe.pdb
 c:\users\abel\documents\visual studio 2017\Projects\TicTacToe\TicTacToe\obj\Debug\TicTacToe.exe
 c:\users\abel\documents\visual studio 2017\Projects\TicTacToe\TicTacToe\obj\Debug\TicTacToe.pdb
+C:\Users\Abel\Desktop\TicTacToe\TicTacToe\bin\Debug\TicTacToe.exe.config
+C:\Users\Abel\Desktop\TicTacToe\TicTacToe\bin\Debug\TicTacToe.exe
+C:\Users\Abel\Desktop\TicTacToe\TicTacToe\bin\Debug\TicTacToe.pdb
+C:\Users\Abel\Desktop\TicTacToe\TicTacToe\obj\Debug\TicTacToe.csprojResolveAssemblyReference.cache
+C:\Users\Abel\Desktop\TicTacToe\TicTacToe\obj\Debug\TicTacToe.Form1.resources
+C:\Users\Abel\Desktop\TicTacToe\TicTacToe\obj\Debug\TicTacToe.Properties.Resources.resources
+C:\Users\Abel\Desktop\TicTacToe\TicTacToe\obj\Debug\TicTacToe.csproj.GenerateResource.Cache
+C:\Users\Abel\Desktop\TicTacToe\TicTacToe\obj\Debug\TicTacToe.exe
+C:\Users\Abel\Desktop\TicTacToe\TicTacToe\obj\Debug\TicTacToe.pdb

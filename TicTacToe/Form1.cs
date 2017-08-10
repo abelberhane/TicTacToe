@@ -39,7 +39,7 @@ namespace TicTacToe
             currentPlayer = Player.x;
             button.Text = currentPlayer.ToString();
             button.Enabled = false;
-            button.BackColor = System.Drawing.Color.LightGreen;
+            button.BackColor = System.Drawing.Color.SaddleBrown;
             Check();
             AITimer.Start();
         }
@@ -92,19 +92,19 @@ namespace TicTacToe
         private void Check()
         {
            if (
-           button1.Text == "X" && button2.Text == "X" && button3.Text == "X" ||
-           button4.Text == "X" && button5.Text == "X" && button6.Text == "X" ||
-           button7.Text == "X" && button8.Text == "X" && button9.Text == "X" ||
-           button1.Text == "X" && button4.Text == "X" && button7.Text == "X" ||
-           button2.Text == "X" && button5.Text == "X" && button8.Text == "X" ||
-           button3.Text == "X" && button6.Text == "X" && button9.Text == "X" ||
-           button1.Text == "X" && button5.Text == "X" && button9.Text == "X" ||
-           button3.Text == "X" && button5.Text == "X" && button7.Text == "X" 
+           button1.Text == "x" && button2.Text == "x" && button3.Text == "x" ||
+           button4.Text == "x" && button5.Text == "x" && button6.Text == "x" ||
+           button7.Text == "x" && button8.Text == "x" && button9.Text == "x" ||
+           button1.Text == "x" && button4.Text == "x" && button7.Text == "x" ||
+           button2.Text == "x" && button5.Text == "x" && button8.Text == "x" ||
+           button3.Text == "x" && button6.Text == "x" && button9.Text == "x" ||
+           button1.Text == "x" && button5.Text == "x" && button9.Text == "x" ||
+           button3.Text == "x" && button5.Text == "x" && button7.Text == "x" 
            )
-            {
+           {
                 WON();
-                label1.Text = "You Win X!";
-            }
+                label1.Text = "You Win!";
+           }
            else if (
            button1.Text == "O" && button2.Text == "O" && button3.Text == "O" ||
            button4.Text == "O" && button5.Text == "O" && button6.Text == "O" ||
@@ -113,12 +113,12 @@ namespace TicTacToe
            button2.Text == "O" && button5.Text == "O" && button8.Text == "O" ||
            button3.Text == "O" && button6.Text == "O" && button9.Text == "O" ||
            button1.Text == "O" && button5.Text == "O" && button9.Text == "O" ||
-           button3.Text == "O" && button5.Text == "O" && button7.Text == "X"
-            )
-            {
+           button3.Text == "O" && button5.Text == "O" && button7.Text == "O"
+                )
+                {
                 WON();
-                label1.Text = "You Win O!";
-            }
+                label1.Text = "You Lose!";
+                }
         }
 
         //Logic for winning the game. 
