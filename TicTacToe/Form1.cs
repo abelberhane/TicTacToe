@@ -1,11 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
+using System;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace TicTacToe
@@ -79,7 +73,7 @@ namespace TicTacToe
 
             foreach (Control x in this.Controls)
             {
-                if (x is Button && x.Tag == "play")
+                if (x is Button && (string)x.Tag == "play")
                 {
                     ((Button)x).Enabled = true;
                     ((Button)x).Text = "?";
@@ -87,38 +81,31 @@ namespace TicTacToe
                 }
             }
         }
+        // More elegant check func, we can also delete all "Check()" and replace with "Mark"
+        private void Mark(string mark)
+        {
+            if (
+             button1.Text == mark && button2.Text == mark && button3.Text == mark ||
+             button4.Text == mark && button5.Text == mark && button6.Text == mark ||
+             button7.Text == mark && button8.Text == mark && button9.Text == mark ||
+             button1.Text == mark && button4.Text == mark && button7.Text == mark ||
+             button2.Text == mark && button5.Text == mark && button8.Text == mark ||
+             button3.Text == mark && button6.Text == mark && button9.Text == mark ||
+             button1.Text == mark && button5.Text == mark && button9.Text == mark ||
+             button3.Text == mark && button5.Text == mark && button7.Text == mark
+             )
+            {
+                WON();
+                label1.Text = (mark == "x") ? "You won!" : "You lose!";
+            }
+        }
 
         //This is where we check to see if there is 3 in a row on either side. If there is, that players victory message is populated.
         private void Check()
         {
-           if (
-           button1.Text == "x" && button2.Text == "x" && button3.Text == "x" ||
-           button4.Text == "x" && button5.Text == "x" && button6.Text == "x" ||
-           button7.Text == "x" && button8.Text == "x" && button9.Text == "x" ||
-           button1.Text == "x" && button4.Text == "x" && button7.Text == "x" ||
-           button2.Text == "x" && button5.Text == "x" && button8.Text == "x" ||
-           button3.Text == "x" && button6.Text == "x" && button9.Text == "x" ||
-           button1.Text == "x" && button5.Text == "x" && button9.Text == "x" ||
-           button3.Text == "x" && button5.Text == "x" && button7.Text == "x" 
-           )
-           {
-                WON();
-                label1.Text = "You Win!";
-           }
-           else if (
-           button1.Text == "O" && button2.Text == "O" && button3.Text == "O" ||
-           button4.Text == "O" && button5.Text == "O" && button6.Text == "O" ||
-           button7.Text == "O" && button8.Text == "O" && button9.Text == "O" ||
-           button1.Text == "O" && button4.Text == "O" && button7.Text == "O" ||
-           button2.Text == "O" && button5.Text == "O" && button8.Text == "O" ||
-           button3.Text == "O" && button6.Text == "O" && button9.Text == "O" ||
-           button1.Text == "O" && button5.Text == "O" && button9.Text == "O" ||
-           button3.Text == "O" && button5.Text == "O" && button7.Text == "O"
-                )
-                {
-                WON();
-                label1.Text = "You Lose!";
-                }
+            Mark("x");
+            Mark("O");
+
         }
 
         //Logic for winning the game. 
@@ -126,7 +113,7 @@ namespace TicTacToe
         {
             foreach (Control x in this.Controls)
             {
-                if (x is Button && x.Tag == "play")
+                if (x is Button && (string)x.Tag == "play")
                 {
                     ((Button)x).Enabled = false;
                     ((Button)x).BackColor = default(Color);
